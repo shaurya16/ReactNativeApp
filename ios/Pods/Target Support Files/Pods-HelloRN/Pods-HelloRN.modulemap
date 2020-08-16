@@ -1,0 +1,6 @@
+module Pods_HelloRN {
+  umbrella header "Pods-HelloRN-umbrella.h"
+
+  export *
+  module * { export * }
+}
