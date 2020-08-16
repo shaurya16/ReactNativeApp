@@ -110,19 +110,7 @@ class Signup extends Component<{}> {
         );
     }
 
-    renderPickerItem = (field) => {
-        const {meta: {touched, error, warning}, label, input: {onChange, ...restInput}} = field;
-        return (
-            <View>
-              <PickerItem
-                    style={{height: 50, width: 100}}
-                    setPickerValue={onChange}/>
-            </View>
-        );
-    }
-
     render() {
-        
         const {handleSubmit} = this.props
         return (
         <View style={styles.container}>
@@ -172,7 +160,7 @@ class Signup extends Component<{}> {
             </TouchableOpacity>
             <View style={styles.signUpTextCont}>
                 <Text style={styles.signUpText}>Already have an account?</Text>
-                <TouchableOpacity onPress={this.goBack}><Text style={styles.signupButton}> Signin</Text></TouchableOpacity>
+                <TouchableOpacity><Text style={styles.signupButton}> Signin</Text></TouchableOpacity>
             </View>
         </View>
         )
